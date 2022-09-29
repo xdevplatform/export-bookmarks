@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block containercontent %}
+<p class="lead">This application allows you to export your recent Bookmarked Tweets.</p>
+<div class="hero-unit">
+	<p>To get started, we'll need you to authorize our demo App (Hello world twitter bot) to access your bookmarks on Twitter using OAuth 2.0. Learn more information about <a href="https://developer.twitter.com/en/docs/authentication/oauth-2-0">OAuth 2.0.</a></p>
+	<p>Here's how it works:</p>
+	<ol>
+		<li>We will redirect you to Twitter.com for you to authorize our app.</li>
+		<li>While at Twitter.com, you will authorize our App to access your Bookmarks.</li>
+		<li>After you click "Export CSV", you should get back a CSV of your most recent Bookmarks.</li>
+	</ol>
+</div>
+<p>Let's get started!</p>
+<a href="/start" class="btn btn-small btn-success">Start</a>
+{% endblock %}
